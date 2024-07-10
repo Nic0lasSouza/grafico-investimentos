@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const LogoBtn = styled.button`
     margin:10px;
     width: 105px;
@@ -18,9 +19,8 @@ export const LogoBtn = styled.button`
     }
 `
 export const SideBarContainer =styled.div`
-    margin-top:20px;
+    margin-top:-465px;
     border-radius: 30px;
-    position: fixed;
     display:flex;
     height: 1200px;
     width:150px;
@@ -64,25 +64,25 @@ export const BotaoSideExit = styled.button`
     }
 `
 export const ImageUser =styled.img`
-    width:64px;
-    height:64px;
+    width:60px;
+    height:60px;
     border-radius:50%;
-    margin-top: 40px;
-    margin-left:70px;
+    margin-top: 25px;
 
 `
 export const BotaoNave = styled.button`
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    width:230px;
-    height:60px;
+    font-weight: 600;
+    font-size: 15px;
+    width:150px;
+    height:40px;
     margin:20px;
-    margin-top: 40px;
-    margin-left:50px;
+    margin-right:50px;
+    margin-top: 30px;
+    margin-left:10px;
+    padding:20px;
     border-radius: 10px;
     display:flex;
-    font-size: 35px;
     align-items: center;
     justify-content: center;
     color: ${props => (props.active ? '#1A91FA' : '#CEDBDC')};
@@ -94,10 +94,60 @@ export const NavContainer = styled.div`
     display: flex;
     position: absolute;
     top: -20px;
-    left: 185px;
-    width: 1770px;
-    height: 140px;
+    left: 200px;
+    width: 1000px;
+    height: 90px;
     border-radius: 30px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
                 0 -5px 10px rgba(206, 219, 220, 0.2);
+`
+export const Container = styled.div`
+    display:flex;
+`
+export const UserNav = styled.div`
+    display: flex;
+    position:relative;
+    margin-top:-130px;
+    margin-left:900px;
+    font-size: 15px;
+    width:150px;
+
+    button{
+        width:auto;
+    }
+    p{
+        display:flex;
+    }
+`
+export const Card1 = styled.div`
+    width: 400px;
+    height:400px;
+    background: linear-gradient(45deg, #1D5BA9, #0A325A);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+
+    p{
+        font-size:25px;
+        color:#F2F5F8;
+        font-weight: bold;
+    }
+
+`
+export const CardContainer = styled.div`
+    margin-left:180px;
+    margin-top: 60px;
+`
+export const ImgProject = styled.img`
+    width: 250px;
+    height: 50px;
+    margin-left:100px;
+`
+export const CirculoProgress = styled.div`
+    width: 135px;
+    height: 135px;
+    background:#2C2F33;
+    border-radius:50% ;
+    overflow: 'hidden';
+    font-weight: bold;
 `
