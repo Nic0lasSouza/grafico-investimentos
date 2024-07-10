@@ -144,10 +144,12 @@ export const ImgProject = styled.img`
     margin-left:100px;
 `
 export const CirculoProgress = styled.div`
-    width: 135px;
-    height: 135px;
-    background:#2C2F33;
-    border-radius:50% ;
-    overflow: 'hidden';
-    font-weight: bold;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(#5390D9 0% 70%, #333 70% 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `
