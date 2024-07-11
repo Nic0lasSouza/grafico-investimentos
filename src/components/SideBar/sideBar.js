@@ -4,9 +4,54 @@ import { CiSettings } from "react-icons/ci";
 import { MdOutlineQrCodeScanner } from "react-icons/md";
 import { RxExit } from "react-icons/rx";
 import { TbUsers } from "react-icons/tb";
-import { SideBarContainer, BotaoSide, BotaoSideExit} from "../styled-components";
 import { useState } from "react";
+import styled from "styled-components";
 
+export const SideBarContainer = styled.div`
+    margin-top:-460px;
+    border-radius: 30px;
+    display:flex;
+    height: 480px;
+    width:100px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+                0 -5px 10px rgba(206, 219, 220, 0.2);
+`
+export const BotaoSide = styled.button`
+    margin:20px;
+    border-radius:10px;
+    display:flex;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: ${props => (props.active ? '#1A91FA' : '#CEDBDC')};
+    background-color:#2C2F33;
+    box-shadow: ${props => (props.active ? '0 50px -40px rgba(0, 0, 0, 0.5)' : '10px 10px 20px rgba(0, 0, 0, 0.5)')};
+    cursor:pointer;
+`
+export const BotaoSideActive = styled.button`
+    border: 2px solid #000000;
+`
+
+export const BotaoSideExit = styled.button`
+    margin:20px;
+    border-radius:10px;
+    display:flex;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: #1A91FA;
+    margin-top:70px;
+    background-color:#2C2F33;
+    box-shadow: ${props => (props.active ? '0 50px -40px rgba(0, 0, 0, 0.5)' : '10px 10px 20px rgba(0, 0, 0, 0.5)')};
+    &:hover{
+        box-shadow: 10px -10px 20px rgba(0, 0, 0, 0.5),
+         0 10px 10px rgba(206, 219, 220, 0.2);
+    }
+`
 
 const SideBar = () =>{
     const [isActive, setIsActive] = useState(null)
