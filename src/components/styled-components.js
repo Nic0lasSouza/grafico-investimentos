@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 export const LogoBtn = styled.button`
     margin:10px;
-    width: 105px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 25px;
     background: #144884;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
@@ -18,22 +18,22 @@ export const LogoBtn = styled.button`
         color: #EBDBDB;
     }
 `
-export const SideBarContainer =styled.div`
-    margin-top:-465px;
+export const SideBarContainer = styled.div`
+    margin-top:-460px;
     border-radius: 30px;
     display:flex;
-    height: 1200px;
-    width:150px;
+    height: 480px;
+    width:100px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
                 0 -5px 10px rgba(206, 219, 220, 0.2);
 `
 export const BotaoSide = styled.button`
     margin:20px;
-    border-radius:25px;
+    border-radius:10px;
     display:flex;
-    font-size: 35px;
-    width: 90px;
-    height: 90px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
     align-items: center;
     justify-content: center;
     color: ${props => (props.active ? '#1A91FA' : '#CEDBDC')};
@@ -47,15 +47,15 @@ export const BotaoSideActive = styled.button`
 
 export const BotaoSideExit = styled.button`
     margin:20px;
-    border-radius:25px;
+    border-radius:10px;
     display:flex;
-    font-size: 35px;
-    width: 90px;
-    height: 90px;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
     align-items: center;
     justify-content: center;
     color: #1A91FA;
-    margin-top:90px;
+    margin-top:70px;
     background-color:#2C2F33;
     box-shadow: ${props => (props.active ? '0 50px -40px rgba(0, 0, 0, 0.5)' : '10px 10px 20px rgba(0, 0, 0, 0.5)')};
     &:hover{
@@ -107,7 +107,7 @@ export const Container = styled.div`
 export const UserNav = styled.div`
     display: flex;
     position:relative;
-    margin-top:-130px;
+    margin-top:-120px;
     margin-left:900px;
     font-size: 15px;
     width:150px;
@@ -120,8 +120,9 @@ export const UserNav = styled.div`
     }
 `
 export const Card1 = styled.div`
-    width: 400px;
-    height:400px;
+    position:relative;
+    width: 200px;
+    height:200px;
     background: linear-gradient(45deg, #1D5BA9, #0A325A);
     border-radius: 20px;
     margin: 20px;
@@ -136,20 +137,10 @@ export const Card1 = styled.div`
 `
 export const CardContainer = styled.div`
     margin-left:180px;
-    margin-top: 60px;
+    margin-top: 10px;
 `
 export const ImgProject = styled.img`
     width: 250px;
     height: 50px;
     margin-left:100px;
-`
-export const CirculoProgress = styled.div`
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background: conic-gradient(#5390D9 0% 70%, #333 70% 100%);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 `

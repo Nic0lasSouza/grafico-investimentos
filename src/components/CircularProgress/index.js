@@ -1,7 +1,15 @@
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import { CirculoProgress } from '../styled-components';
+import styled from 'styled-components';
 
+export const CirculoProgress = styled.div`
+    width: 135px;
+    height: 135px;
+    background:#2C2F33;
+    border-radius:50% ;
+    overflow: 'hidden';
+    font-weight: bold;
+`
 const ProgressCircle = ({ percentage }) => {
     return (
       <div>
